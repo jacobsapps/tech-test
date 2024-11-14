@@ -20,7 +20,7 @@ final class UserServiceImpl: UserService {
 
     @Injected(\.authService) private var authService
     
-    private let userURL = URL(string: "https://github.com/jacobsapps/techtest/tree/main/Resources/user.json")!
+    private let userURL = URL(string: "https://jacobsapps.github.io/tech-test/Resources/user.json")!
     
     func fetchUserInfo() async throws -> User {
         let token = try await authService.getBearerToken()

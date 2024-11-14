@@ -18,6 +18,9 @@ struct BossesView: View {
                 BossView(boss: boss, likes: $viewModel.likes)
             }
         }
+        .task {
+            await viewModel.load()
+        }
     }
 }
 

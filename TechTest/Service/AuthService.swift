@@ -23,7 +23,7 @@ actor AuthServiceImpl: AuthService {
     
     var tokenTask: Task<String, Error>?
     
-    private let authURL = URL(string: "https://github.com/jacobsapps/techtest/tree/main/Resources/auth.json")!
+    private let authURL = URL(string: "https://jacobsapps.github.io/tech-test/Resources/auth.json")!
     
     func getBearerToken() async throws -> String {
         print("Fetch auth token")

@@ -20,7 +20,7 @@ final class BossServiceImpl: BossService {
     
     @Injected(\.authService) private var authService
     
-    private let bossURL = URL(string: "https://github.com/jacobsapps/techtest/tree/main/Resources/bosses.json")!
+    private let bossURL = URL(string: "https://jacobsapps.github.io/tech-test/Resources/bosses.json")!
     
     func fetchBosses() async throws -> [Boss] {
         let token = try await authService.getBearerToken()
